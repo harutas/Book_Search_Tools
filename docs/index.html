@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Book Search Tools</title>
+  </head>
+  <body>
+    <div id="root" class="vh-100 bg-secondary d-flex justify-content-center align-items-center">
+      <div class="bg-dark col-8 d-flex flex-column align-items-center">
+        <!-- header -->
+        <div class="bg-gray w-100 text-white text-center">
+          <h1 class="fs-1 m-0">Open Library Book Search [BTools]</h1>
+          <p class="fs-5 m-0">(Queries can take a couple seconds)</p>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+          <div class="w-100">
+            <!-- darminal -->
+            <div id="tarminal" class="vh-50 px-5 py-2 overflow-auto container text-white"></div>
+            <!-- command input -->
+            <div class="w-100 px-2 py-1">
+              <input
+                id="command-input"
+                class="form-control"
+                type="text"
+                value=""
+                placeholder="type any command"
+                aria-label="default input example"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script defer src="bandle.js"></script></body>
+</html>
